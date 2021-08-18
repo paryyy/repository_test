@@ -1,5 +1,4 @@
 from django.contrib import admin
-
+from . models import ExplainModel
 # Register your models here.
-from . models import jam_majzur
-admin.site.register(jam_majzur)
+admin.site.register(ExplainModel)

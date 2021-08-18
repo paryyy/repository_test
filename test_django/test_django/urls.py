@@ -20,4 +20,5 @@ urlpatterns = [
     
     path('admin/', admin.site.urls),
     path('firstpage/',include('my_app.urls')),
+
 ]
