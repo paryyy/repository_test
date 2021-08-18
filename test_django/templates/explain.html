@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Explain about Multiplication and division</title>
-</head>
-<body>
+{%  extends 'base.html'  %}
+
+
+{%  block content  %}
+
     {% for explain in explains %}
         <p>{{ explain.Multiplication }}</p> <br>
         <p>{{ explain.division }}</p>
     {% endfor %}
-</body>
-</html>
+
+{%  endblock  %}

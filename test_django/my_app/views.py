@@ -12,3 +12,10 @@ def explain(request):
     explains = ExplainModel.objects.all()
     context = {'explains': explains}
     return render(request, 'explain.html', context)
+
+
+def Multiplication(request):
+    return render(request, 'Multiplication.html')
+
+def division(request):
+    return render(request, 'division.html')

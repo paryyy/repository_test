@@ -3,5 +3,39 @@
 {%  extends 'base.html'  %}
 
 {%  block content  %}
-<h3>Hi Welcome to calculations WoOoW! let's go!</h3>
+
+<!--خوش آمدگویی-->
+<h1 class="display-4">Hi Welcome to calculation</h1> <br> <br>
+
+
+
+<!-- ایجاد بادی برای درخواست انتخاب نوع محاسبه-->
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Please select your calculation type</h3>
+  </div>
+</div>
+
+
+
+<!--ایجاد مکان انتخاب برای تقسیم و ضرب -->
+<div class="card mb-3">
+  <img src="pic.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h3 class="card-title">Multiplication</h3>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <a href="http://127.0.0.1:8000/Home/Multiplication/" class="btn btn-secondary">let's to calculate</a>
+  </div>
+</div>
+<div class="card mb-3">
+  <img src="pic.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h3 class="card-title">Division</h3>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <a href="http://127.0.0.1:8000/Home/division/" class="btn btn-secondary">let's to calculate</a>
+  </div>
+</div>
+
+
+
 {%  endblock  %}
