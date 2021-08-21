@@ -1,0 +1,31 @@
+{%  extends 'base.html'  %}
+
+
+{%  block content  %}
+<!--خوش آمدگویی-->
+<h1 class="display-4">Hi Welcome to calculation</h1> <br> <br>
+<!--خوش آمدگویی-->
+
+
+
+<!--مکان ضرب و تقسیم -->
+<div class="card mb-3">
+  <img src="" class="card-img-top" alt="">
+  <div class="card-body">
+    <h3 class="card-title">Please select your calculation type</h3>
+    <p class="card-text">This is a test for django aplication</p>
+    {% for explain in explains %}
+        <a href="detail/{{explain.id}}" class="btn btn-secondary" >{{ explain.Multiplication }}</a > <br> <br>
+    {% endfor %}
+  </div>
+</div>
+
+
+<!--ایجاد  فرم-->
+<form action = "/explain/" method = "POST">
+    {% csrf_token %}
+    <input type="text" placeholder="multi" name="multi">
+    <input type="text" placeholder="division text" name="divi">
+    <input type="submit" value="send">
+</form>
+{%  endblock  %}

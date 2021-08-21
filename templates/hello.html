@@ -1,0 +1,49 @@
+
+
+{%  extends 'base.html'  %}
+
+{%  block content  %}
+
+<!--خوش آمدگویی-->
+<h1 class="display-4">Hi Welcome to calculation</h1> <br> <br>
+
+
+
+<!-- ایجاد بادی برای درخواست انتخاب نوع محاسبه-->
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Please select your calculation type</h3>
+  </div>
+</div>
+
+
+
+<!--ایجاد مکان انتخاب برای تقسیم و ضرب -->
+<div class="card mb-3">
+
+  <div class="card-body">
+    <h3 class="card-title">Multiplication</h3>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <a href="#" class="btn btn-secondary">let's to calculate</a>
+
+  </div>
+</div>
+<!--<div class="card mb-3">-->
+<!--  <div class="card-body">-->
+<!--    <h3 class="card-title">Division</h3>-->
+<!--    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--    <a href="#" class="btn btn-secondary">let's to calculate</a>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<form action="/Home/" method="POST">
+  {% csrf_token %}
+  {{form}}
+  <input type="submit" value="send">
+</form>
+<!--<p>your ans is {{resultt}}</p>-->
+
+{%  endblock  %}
+
+
