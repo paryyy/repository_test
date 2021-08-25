@@ -20,22 +20,30 @@
 
 <!--ایجاد مکان انتخاب برای تقسیم و ضرب -->
 <div class="card mb-3">
-  <img src="pic.jpg" class="card-img-top" alt="">
+
   <div class="card-body">
     <h3 class="card-title">Multiplication</h3>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <a href="http://127.0.0.1:8000/Home/Multiplication/" class="btn btn-secondary">let's to calculate</a>
+    <a href="#" class="btn btn-secondary">let's to calculate</a>
+
   </div>
 </div>
-<div class="card mb-3">
-  <img src="pic.jpg" class="card-img-top" alt="">
-  <div class="card-body">
-    <h3 class="card-title">Division</h3>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <a href="http://127.0.0.1:8000/Home/division/" class="btn btn-secondary">let's to calculate</a>
-  </div>
-</div>
+<!--<div class="card mb-3">-->
+<!--  <div class="card-body">-->
+<!--    <h3 class="card-title">Division</h3>-->
+<!--    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--    <a href="#" class="btn btn-secondary">let's to calculate</a>-->
+<!--  </div>-->
+<!--</div>-->
 
 
+<form action="/Home/" method="POST">
+  {% csrf_token %}
+  {{form}}
+  <input type="submit" value="send">
+</form>
+<!--<p>your ans is {{resultt}}</p>-->
 
 {%  endblock  %}
+
+

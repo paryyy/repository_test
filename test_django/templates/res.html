@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/my_app/" method="post">
+    {% csrf_token %}
+    {{form}}
+    <botton type="submit">send</botton>
+</form>
+</body>
+</html>
